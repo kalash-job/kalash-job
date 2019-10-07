@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Страница "Бизнес-консультирование" сайта ООО "Аудит-Эксперт Бизнес"</title>
+    <title>Страница "Отзывы" сайта ООО "Аудит-Эксперт Бизнес"</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -12,7 +12,6 @@
 
 <body>
 <div class="container">
-    <header class="company-header">
         <button type="button" class="moveUp"></button>
         <header class="main-header">
             <ul class="header-contacts">
@@ -29,7 +28,7 @@
                 <nav class="main-menu">
                     <ul>
                         <li><a href="index.html">Главная</a></li>
-                        <li class="parent-item">
+                        <li class="parent-item current-item">
                             <a href="company.html">О компании</a>
                             <button type="button" class="opening-submenu"></button>
                             <ul class="sub-menu">
@@ -40,7 +39,7 @@
                                 <li><a href="feedbacks.html">Отзывы</a></li>
                             </ul>
                         </li>
-                        <li class="parent-item current-item">
+                        <li class="parent-item">
                             <a href="services.html">Услуги</a>
                             <button type="button" class="opening-submenu"></button>
                             <ul class="sub-menu">
@@ -65,36 +64,48 @@
                 </div>
             </section>
         </header>
+
         <main class="main-third-page">
-            <h1>Бизнес-консультирование</h1>
+            <h1>Отзывы наших клиентов</h1>
             <ul class="breadcrumbs">
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="services.html">/ Услуги</a></li>
-                <li class="breadcrumbs-current">/ Бизнес-консультирование</li>
+                <li><a href="company.html">/ О компании</a></li>
+                <li class="breadcrumbs-current">/ Отзывы</li>
             </ul>
-            <section class="main-bconsulting">
-                <div class="bconsulting-article">
-                    <div class="bconsulting-photo"></div>
-                    <div class="bconsulting-text">
-                        <p><b>Бизнес-консультирование</b> мы рассматриваем как вид интеллектуальной деятельности,
-                            основные задачи которого заключаются в анализе, обосновании перспектив развития и
-                            использования научно-технических и организационно-экономических инноваций с учетом
-                            предметной деятельности и проблем Заказчика.</p>
-                        <p><b>Наши специалисты помогут Вам:</b></p>
-                        <ul>
-                            <li>разработать рыночную стратегию компании (анализ привлекательности рынка, портфельный
-                                анализ, разработка конкурентной стратегии);
-                            </li>
-                            <li>определить параметры инвестиционного проекта (оценка инвестиционных издержек,
-                                прогнозирование ожидаемой прибыли, определение периода окупаемости проекта);
-                            </li>
-                            <li>оценить эффективность инвестиций (расчет показателей эффективности инвестиций для
-                                различных вариантов проекта, выработка рекомендаций по реализации инвестиционного
-                                проекта).
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <section class="main-feedbacks">
+                <ul>
+                    <li class="feedbacks-img">
+                        <img src="img/licence/feedback1.jpg"
+                             alt="Свидетельство о членстве в саморегулируемой организации аудиторов некоммерческое партнерство «Московская аудиторская палата»">
+                        <p>Отзыв Московского государственного института международных отношений.</p>
+                    </li>
+                    <li class="feedbacks-img">
+                        <img src="img/licence/feedback2.jpg"
+                             alt="Свидетельство о членстве в саморегулируемой организации аудиторов «Российский союз аудиторов» (Ассоциация) (СРО РСА)">
+                        <p>Отзыв ФГП "Вневедомственная охрана железнодорожного транспорта Российской Федерации".</p>
+                    </li>
+                    <li class="feedbacks-img">
+                        <img src="img/licence/feedback3.jpg"
+                             alt="Выписка из Реестра аудиторов и аудиторских организаций">
+                        <p>Отзыв ФГУП "Управление вневедомственной охраны министерства транспорта Российской
+                            Федерации".</p>
+                    </li>
+                    <li class="feedbacks-img">
+                        <img src="img/licence/feedback4.jpg" alt="Лицензия  на осуществление аудиторской деятельности">
+                        <p>Отзыв ФГУП "43 Центральный экспериментальный производственный комбинат" МИНОБОРОНЫ
+                            РОССИИ.</p>
+                    </li>
+                    <li class="feedbacks-img">
+                        <img src="img/licence/feedback5.jpg"
+                             alt="Свидетельство о внесении записи в Единый государственный реестр юридических лиц о юридическом лице">
+                        <p>Отзыв Агентства по управлению недвижимостью и инвестициями.</p>
+                    </li>
+                    <li class="feedbacks-img">
+                        <img src="img/licence/feedback6.jpg"
+                             alt="Свидетельство о внесении записи в Единый государственный реестр юридических лиц о государственной регистрации изменений">
+                        <p>Отзыв ООО "РЕГИОНПРОМСТРОЙ".</p>
+                    </li>
+                </ul>
             </section>
 
         </main>
@@ -129,7 +140,13 @@
                 <a href="mailto:auditexpbiz@yandex.ru"></a>
             </div>
         </footer>
+        <section class="modal-feedbacks modal-img">
+            <button class="modal-close" type="button">Закрыть</button>
+            <img src="img/licence/feedback1large.jpg"
+                 alt="Отзыв - увеличенное изображение">
+        </section>
 
-</div>
-<script src="js/script.js"></script>
-</body>
+  </div>
+<div class="overlay"></div>
+  <script src="js/script.js"></script>
+  </body>
